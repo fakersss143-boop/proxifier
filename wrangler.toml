@@ -1,0 +1,22 @@
+name = "vpn-backend"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+# Create this with: wrangler d1 create vpn-db   (or via the Cloudflare dashboard)
+# then paste the database_id it gives you below.
+[[d1_databases]]
+binding = "DB"
+database_name = "vpn-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+WEBSHARE_API_BASE = "https://proxy.webshare.io/api/v2"
+
+# Secrets (set these via the Cloudflare dashboard: Workers -> your worker ->
+# Settings -> Variables -> "Encrypt", or `wrangler secret put NAME`):
+#   JWT_SECRET
+#   WEBSHARE_API_KEY
+#   STRIPE_SECRET_KEY
+#   STRIPE_WEBHOOK_SECRET
+#   STRIPE_PRICE_ID_BASIC
+#   STRIPE_PRICE_ID_PRO

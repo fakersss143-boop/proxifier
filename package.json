@@ -1,0 +1,16 @@
+{
+  "name": "vpn-backend-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute vpn-db --file=./schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.6.3"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}
