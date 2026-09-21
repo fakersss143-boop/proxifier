@@ -7,7 +7,7 @@ compatibility_date = "2024-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "vpn-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "1911700f-1b43-4829-8b56-2242a7f5fb1c"
 
 [vars]
 WEBSHARE_API_BASE = "https://proxy.webshare.io/api/v2"
